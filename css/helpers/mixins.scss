@@ -4,10 +4,6 @@
   border-radius: $raio;
 }
 
-@mixin borda-mais-arredondada {
-  -webkit-border-radius: $raio-grande;
-  border-radius: $raio-grande;
-}
 
 %image-replacement {
 	text-indent: -9999px;

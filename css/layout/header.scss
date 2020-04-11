@@ -5,10 +5,25 @@ header {
   height: 90px;
   width: 100%;
   position: absolute;
+  @media #{$mq-mobile} {
+  	height: auto;
+	}
 }
 
 header .container {
   position: relative;
+  @media #{$mq-mobile} {
+    position: static;
+    h1 {
+  		max-width: 50%;
+  		margin: 0 auto;
+      img {
+    		max-width: 100%;
+    		margin: .5em auto;
+    		display: block;
+    	}
+  	}
+  }
 }
 
 .menu-principal {
@@ -25,6 +40,12 @@ header .container {
   li {
     display: inline-block;
     width: 5em;
+    @media #{$mq-mobile} {
+  		margin: .4em;
+      form {
+    		width: auto;
+    	}
+  	}
   }
 
   a {
@@ -35,4 +56,13 @@ header .container {
       text-decoration: underline;
     }
   }
+
+  @media #{$mq-mobile} {
+		position: static;
+		display: block;
+		text-align: center;
+    form {
+  		width: auto;
+  	}
+	}
 }
