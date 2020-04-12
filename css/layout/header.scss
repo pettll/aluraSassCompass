@@ -42,9 +42,7 @@ header .container {
     width: 5em;
     @media #{$mq-mobile} {
   		margin: .4em;
-      form {
     		width: auto;
-    	}
   	}
   }
 
@@ -61,8 +59,6 @@ header .container {
 		position: static;
 		display: block;
 		text-align: center;
-    form {
   		width: auto;
-  	}
 	}
 }
